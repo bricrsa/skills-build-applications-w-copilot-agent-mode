@@ -24,7 +24,7 @@ DATABASES = {
         "ENGINE": "djongo",
         "NAME": "octofit_db",  # MongoDB database name
         "HOST": "localhost",
-        "PORT": 27017,
+        "PORT": 8000,
     }
 }
 
