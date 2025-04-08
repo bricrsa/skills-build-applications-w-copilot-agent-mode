@@ -16,6 +16,18 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+# Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
+DATABASES = {
+    "default": {
+        "ENGINE": "djongo",
+        "NAME": "octofit_db",  # MongoDB database name
+        "HOST": "localhost",
+        "PORT": 27017,
+    }
+}
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -78,17 +90,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "djongo",
-        "NAME": "octofit_db",  # MongoDB database name
-        "HOST": "localhost",
-        "PORT": 27017,
-    }
-}
 
 
 # Password validation
