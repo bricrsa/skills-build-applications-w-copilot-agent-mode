@@ -37,7 +37,11 @@ SECRET_KEY = "django-insecure-8f##s!7hq%u+a_cge4*)v#$z#vun6bh&2&2p7w@v@lp^6a&jk4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]  # Allow all hosts
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'ominous-waddle-xrxpg4qqqx4hp477.github.dev-8000.app.github.dev'
+]
 
 
 # Application definition
@@ -52,6 +56,7 @@ INSTALLED_APPS = [
     "tracker",  # Add the tracker app to the installed apps
     "corsheaders",  # Enable CORS middleware
     "octofit_tracker",  # Register the octofit_tracker app
+    "djongo",  # Add Djongo for MongoDB support
 ]
 
 MIDDLEWARE = [
