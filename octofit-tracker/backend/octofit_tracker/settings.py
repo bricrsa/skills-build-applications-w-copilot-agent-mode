@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATABASES = {
     "default": {
         "ENGINE": "djongo",
-        "NAME": "octofit_db",  # MongoDB database name
+        "NAME": "octofit_db",  
         "HOST": "localhost",
-        "PORT": 8000,
+        "PORT": "8000",
     }
 }
 
